@@ -41,7 +41,7 @@ st.markdown('<p class="sub">Selamat Datang di Website Profil Saya</p>', unsafe_a
 st.divider()
 
 # Foto
-image = Image.open("assets/andra.jpeg")
+image = Image.open("andra.jpeg")
 st.image(image, width=280)
 
 st.divider()
