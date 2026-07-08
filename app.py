@@ -13,47 +13,81 @@ st.set_page_config(
 # =============================
 # CSS
 # =============================
+# =============================
+# CSS
+# =============================
+
 st.markdown("""
 <style>
 
+/* Background utama */
 .stApp{
-    background-color:#f4f4f4;
+    background-color:#0d1117;
+    color:white;
 }
 
+/* Semua tulisan */
+html, body, [class*="css"]{
+    color:white;
+}
+
+/* Card */
 .card{
-    background:white;
+    background:#161b22;
+    color:white;
     padding:30px;
     border-radius:15px;
-    box-shadow:0px 10px 20px rgba(0,0,0,.15);
+    box-shadow:0px 8px 20px rgba(255,255,255,0.08);
 }
 
-.section-title{
-    text-align:center;
-    font-size:35px;
-    font-weight:bold;
-    color:#333;
-    margin-top:40px;
-    margin-bottom:20px;
+/* Judul */
+h1,h2,h3,h4,h5,h6{
+    color:white !important;
 }
 
+/* Paragraf */
+p{
+    color:#d1d5db;
+}
+
+/* Garis */
+hr{
+    border:1px solid #30363d;
+}
+
+/* Skill Box */
 .skill-box{
-    background:white;
+    background:#161b22;
+    color:white;
     padding:20px;
     border-radius:15px;
-    box-shadow:0px 5px 15px rgba(0,0,0,.1);
     text-align:center;
+    box-shadow:0px 5px 15px rgba(255,255,255,0.08);
+    transition:0.3s;
 }
 
+.skill-box:hover{
+    transform:translateY(-5px);
+}
+
+/* Stat Box */
 .stat-box{
-    background:white;
+    background:#161b22;
+    color:white;
     padding:20px;
     border-radius:15px;
-    box-shadow:0px 5px 15px rgba(0,0,0,.1);
     text-align:center;
+    box-shadow:0px 5px 15px rgba(255,255,255,0.08);
 }
 
+/* Foto */
 img{
     border-radius:20px;
+}
+
+/* Progress Bar */
+.stProgress > div > div > div > div{
+    background:#3b82f6;
 }
 
 </style>
@@ -63,10 +97,29 @@ img{
 # HERO
 # =============================
 
-st.title("👋 Hi! I'm Adicandra")
-st.subheader("UI / UX Designer")
+st.markdown("""
+<div style="
+background:#161b22;
+padding:35px;
+border-radius:20px;
+box-shadow:0px 10px 20px rgba(255,255,255,.08);
+margin-bottom:30px;
+">
 
-st.markdown("---")
+<h1 style="color:white;">👋 Hi! I'm Adicandra</h1>
+
+<h3 style="color:#60a5fa;">
+UI / UX Designer
+</h3>
+
+<p style="font-size:18px;color:#d1d5db;">
+Selamat datang di website portfolio saya.
+Saya merupakan mahasiswa yang memiliki minat
+di bidang UI dan UX Design.
+</p>
+
+</div>
+""", unsafe_allow_html=True)
 
 # =============================
 # ABOUT
